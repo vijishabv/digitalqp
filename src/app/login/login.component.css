@@ -1,0 +1,16 @@
+
+#f1{
+    width: 450px;
+    background-color: bisque;
+    height: 350px;
+    align-items: center;
+   
+}
+
+#f2{
+    margin-top: 60px;
+}
+.div1{
+    background-image: linear-gradient(rgb(104, 104, 213),rgb(194, 130, 130),rgb(226, 226, 121));
+    background-attachment: cover;
+}

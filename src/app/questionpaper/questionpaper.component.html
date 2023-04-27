@@ -1,0 +1,22 @@
+<div class="container-fluid mt-5">
+  <h1> questionpaper with answers </h1>
+    <div id="target" *ngFor="let item of questions;;let i=index" [ngClass]="{active:i===1}" >
+    <form >
+        
+        <div class="mb-3">
+            Question {{item.id}}
+          <input type="text" class="form-control"  name="question" [(ngModel)]="item.question">
+        </div>
+        <div class="mb-3">
+            Options: 1) {{item.option1}}  2) {{item.option2}}  3) {{item.option3}}  4) {{item.option4}}
+        </div>
+        <div class="mb-3">
+            Answer:
+            <input type="text" class="form-control" name="rightanswer" [(ngModel)]="item.rightanswer" >
+  
+        </div>
+      </form>
+    </div>
+    <a class="btn btn-success" routerLink="/teacher">go back</a>
+
+</div>

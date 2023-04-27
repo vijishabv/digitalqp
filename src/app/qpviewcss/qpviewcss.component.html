@@ -1,0 +1,101 @@
+
+
+<div class="  text-align-center text-center mt-5 d-flex justify-content-center back">
+
+  <div class="   mt-5">
+    <div class="card border border-5 rounded-3 border-primary bg-secondary" style="width: 35rem; height: 38rem;">
+      <img src="https://res.cloudinary.com/cloudinary-marketing/images/w_1540,h_847/f_auto,q_auto/v1649718594/Web_Assets/blog/working_with_css_22218720ab/working_with_css_22218720ab-jpg?_i=AA" class="card-img-top" alt="img" >
+      <div class="card-body  h6 pb-2 mb-4 text-dark rounded-3 border-danger  d-flex justify-content-center ">
+        <form >
+          <br>
+          <div class="mb-3 text-warning " style="width:500px ">
+             {{i+1}}){{qstn1.question}}
+          </div>
+          
+            
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="answer" [(ngModel)]="answer" id="flexRadioDefault1" [value]="qstn1.option1">
+              <label class="form-check-label text-warning " for="flexRadioDefault1">
+                {{qstn1.option1}}
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="answer" [(ngModel)]="answer" id="flexRadioDefault2"[value]="qstn1.option2" >
+              <label class="form-check-label text-warning "for="flexRadioDefault2">
+               {{qstn1.option2}}
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio"  name="answer" [(ngModel)]="answer" id="flexRadioDefault3" [value]="qstn1.option3">
+              <label class="form-check-label text-warning " for="flexRadioDefault3">
+                {{qstn1.option3}}
+     
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio"  name="answer" [(ngModel)]="answer"id="flexRadioDefault4" [value]="qstn1.option4">
+              <label class="form-check-label text-warning " for="flexRadioDefault4">
+                {{qstn1.option4}}
+    
+    
+              </label>
+            </div>
+            <br>
+            <div class="d-flex justify-content-evenly">
+              <button class="btn btn-warning" (click)="displayquestion()">submit</button>
+              <app-exit></app-exit></div>
+  
+          </form>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  
+  </div>
+  <br>
+  
+  <!--
+  <div class="container">
+      <div class="bg-primary " style="width: 700px; height: 500px;">
+        <div  class="text-dark">
+      <form >
+        <div class="mb-3 text-dark " style="width:500px ">
+           {{qstn1.id}}){{qstn1.question}}
+        </div>
+        
+          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" [(ngModel)]="answer" id="flexRadioDefault1" [value]="qstn1.option1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              {{qstn1.option1}}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" [(ngModel)]="answer" id="flexRadioDefault2"[value]="qstn1.option2" >
+            <label class="form-check-label" for="flexRadioDefault2">
+             {{qstn1.option2}}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio"  name="answer" [(ngModel)]="answer" id="flexRadioDefault3" [value]="qstn1.option3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              {{qstn1.option3}}
+   
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio"  name="answer" [(ngModel)]="answer"id="flexRadioDefault4" [value]="qstn1.option4">
+            <label class="form-check-label" for="flexRadioDefault4">
+              {{qstn1.option4}}
+  
+  
+            </label>
+          </div>
+          <button  (click)="displayquestion()">submit</button>
+        </form>
+      </div>
+        </div>
+      </div>
+    -->
+  

@@ -1,0 +1,133 @@
+<div class="container-fluid">
+<div class="  text-align-center text-center mt-5 d-flex justify-content-center bg-primary-subtle">
+
+  <div class=" d-flex justify-content-center  mt-5">
+    <div class="card border border-5 rounded-3 border-primary bg-success" style="width: 35rem; height: 62rem;">
+      <img src="https://thumbs.dreamstime.com/b/questions-colorful-overlapping-question-marks-banner-vector-119765863.jpg" class="card-img-top" alt="img" >
+      <div class="card-body  h6 pb-2 mb-4 text-dark rounded-3 border-danger  d-flex justify-content-center ">
+        <form >
+  
+          <div class="mb-3"style="width:500px ">
+            <label for="exampleInputEmail2" class="form-label">enter question id</label>
+            <input name="id" [(ngModel)]="id"type="text" class="form-control" id="exampleInputEmail2">
+          </div>
+            <div class="mb-3"style="width:500px ">
+              <label for="exampleInputEmail1" class="form-label">enter question</label>
+              <input name="question" [(ngModel)]="question"type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3"style="width:500px">
+                <label for="exampleInputEmail1" class="form-label">enter option1</label>
+                <input name="option1" [(ngModel)]="option1" type="text" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3"style="width:500px">
+                <label for="exampleInputEmail1" class="form-label">enter option2</label>
+                <input name="option2" [(ngModel)]="option2" type="text" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3"style="width:500px">
+                <label for="exampleInputEmail1" class="form-label">enter option3</label>
+                <input name="option3" [(ngModel)]="option3" type="text" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3"style="width:500px">
+                <label for="exampleInputEmail1" class="form-label">enter option 4</label>
+                <input  name="option4" [(ngModel)]="option4" type="text" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3"style="width:500px">
+                <label for="exampleInputEmail1" class="form-label">enter right answer</label>
+                <input  name="rightanswer" [(ngModel)]="rightanswer" type="text" class="form-control" id="exampleInputEmail1">
+              </div>
+               <div class=" d-flex justify-content-evenly">
+              <button class="btn btn-primary" (click)="insertq()">insert</button>
+              <br>
+    <app-exit></app-exit>
+            </div>
+          </form>
+      </div>
+    </div>
+    
+  </div>
+  
+  </div>
+  <!--
+  <div class="container">
+      <div class="bg-primary " style="width: 700px; height: 500px;">
+        <div  class="text-dark">
+      <form >
+        <div class="mb-3 text-dark " style="width:500px ">
+           {{qstn1.id}}){{qstn1.question}}
+        </div>
+        
+          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" [(ngModel)]="answer" id="flexRadioDefault1" [value]="qstn1.option1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              {{qstn1.option1}}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="answer" [(ngModel)]="answer" id="flexRadioDefault2"[value]="qstn1.option2" >
+            <label class="form-check-label" for="flexRadioDefault2">
+             {{qstn1.option2}}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio"  name="answer" [(ngModel)]="answer" id="flexRadioDefault3" [value]="qstn1.option3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              {{qstn1.option3}}
+   
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio"  name="answer" [(ngModel)]="answer"id="flexRadioDefault4" [value]="qstn1.option4">
+            <label class="form-check-label" for="flexRadioDefault4">
+              {{qstn1.option4}}
+  
+  
+            </label>
+          </div>
+          <button  (click)="displayquestion()">submit</button>
+        </form>
+      </div>
+        </div>
+      </div>
+    -->
+  
+
+
+<!--<div class="container mt-5">
+<div class="bg-primary " style="width: 700px; height: 600px;">
+<form >
+  
+  <div class="mb-3"style="width:500px ">
+    <label for="exampleInputEmail2" class="form-label">enter question id</label>
+    <input name="id" [(ngModel)]="id"type="text" class="form-control" id="exampleInputEmail2">
+  </div>
+    <div class="mb-3"style="width:500px ">
+      <label for="exampleInputEmail1" class="form-label">enter question</label>
+      <input name="question" [(ngModel)]="question"type="text" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="mb-3"style="width:500px">
+        <label for="exampleInputEmail1" class="form-label">enter option1</label>
+        <input name="option1" [(ngModel)]="option1" type="text" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3"style="width:500px">
+        <label for="exampleInputEmail1" class="form-label">enter option2</label>
+        <input name="option2" [(ngModel)]="option2" type="text" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3"style="width:500px">
+        <label for="exampleInputEmail1" class="form-label">enter option3</label>
+        <input name="option3" [(ngModel)]="option3" type="text" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3"style="width:500px">
+        <label for="exampleInputEmail1" class="form-label">enter option 4</label>
+        <input  name="option4" [(ngModel)]="option4" type="text" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3"style="width:500px">
+        <label for="exampleInputEmail1" class="form-label">enter right answer</label>
+        <input  name="rightanswer" [(ngModel)]="rightanswer" type="text" class="form-control" id="exampleInputEmail1">
+      </div>
+      <button class="btn btn-primary" (click)="insertq()">insert</button>
+    
+  </form>
+  </div>
+</div>
+-->

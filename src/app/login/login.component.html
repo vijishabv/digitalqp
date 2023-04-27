@@ -1,0 +1,96 @@
+<div class="container-fluid div1 mt-5 ">
+
+  <div class="row" id="f2">
+    <h1 class="text-danger">Login here to scale your knowledge</h1>
+<br>
+
+      <div class="col-lg-5">
+        <br>
+        <br>
+        <img  height="500px"src="https://app.dfavo.com/assets/login/images/login-image.svg" alt="login image">
+
+      </div>
+      <div class="col-lg -1"></div>
+      <br>
+      <div class="col-lg- 5 mt-5" id="f1">
+          <form class=" p-5 mt-5 me-3" [formGroup]="loginForm">
+              <div class="form-floating mb-4 w-100">
+                  <input type="text"  name="regno" formControlName="regno"class="form-control" id="floatingInput" placeholder="registerid">
+                  <label for="floatingInput">Register id</label>
+                </div>
+                <div  class="text-danger mb-2" *ngIf="this.loginForm.get('regno')?.errors && this.loginForm.get('regno')?.touched">invalid register number</div>
+  
+                <div class="form-floating mb-3">
+                  <input type="password"  name="pswd" formControlName="pswd"class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div  class="text-danger mb-2" *ngIf="this.loginForm.get('pswd')?.errors && this.loginForm.get('pswd')?.touched">invalid password</div>
+                
+                <div class ="mb-3 mt-3 text-align-evenly">
+                  <button (click)='login()'class=" btn btn-primary  ">login
+
+                  </button>
+                  
+                  <span class="ms-5 text-dark">New user? click here to  <a routerLink="/reg">register</a></span>
+                </div>
+             </form>
+
+      </div>
+  </div>
+  <br>
+      <br>
+      <br>
+      <br>
+</div>
+<!--
+<div class="container">
+    <video autoplay muted loop id="myVideo" src="https://player.vimeo.com/external/183786499.sd.mp4?s=9c1d3427a6b3cffbf451bcc3a7e3be442862be4b&profile_id=164" type="video/mp4">
+      </video>
+</div>
+<div>
+    <div class=" head text-align-center">
+      <br>
+      <br>
+        <h1>Login here to scale your knowledge</h1>
+    </div>
+    <br>
+    <br>
+    
+    <div class="row">
+        <div class="col-lg-5 ">
+            <div id="div1">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Its your turn... go for it....</h5>
+                    <p class="card-text">Exams improve the student's overall personality, memory, and their revision
+                        skills. Generally, students give oral and written exams in their schools/colleges. They have a
+                        wrong belief like an exam is unnecessary, but if they try to think in a detailed positive
+                        manner, they can understand the benefits of exams.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6 login">
+            <form class="border p-5 mt-5 me-3" [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="form-floating mb-3">
+                    <input type="text"  name="regid" formControlName="regid"class="form-control" id="floatingInput" placeholder="registerid">
+                    <label for="floatingInput">Register id</label>
+                  </div>
+                  <div  class="text-danger mb-2" *ngIf="this.loginForm.get('regid')?.errors && this.loginForm.get('regid')?.touched">invalid register number</div>
+    
+                  <div class="form-floating mb-3">
+                    <input type="password"  name="pswd" formControlName="pswd"class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div  class="text-danger mb-2" *ngIf="this.loginForm.get('pswd')?.errors && this.loginForm.get('pswd')?.touched">invalid password</div>
+                  
+                  <div class ="mb-3 mt-3">
+                    <button type="submit"class=" btn btn-primary ">login
+
+                    </button>
+                  </div>
+               </form>
+        </div>
+    </div>
+</div>
+-->
